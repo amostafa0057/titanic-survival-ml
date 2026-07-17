@@ -1,4 +1,4 @@
-# Titanic Survival Prediction 🚢
+# Titanic Survival Prediction 
 
 Predicting whether a passenger survived the Titanic using machine learning.
 

@@ -5,7 +5,7 @@ Predicting passenger survival using both classical ML and a PyTorch neural netwo
 ## Notebooks
 | Notebook | Approach |
 |---|---|
-| `titanic-survival-ml.ipynb` | Classical ML — 4 models compared |
+| `titanic-survival-ml.ipynb` | Classical ML — 5 models compared |
 | `titanic-survival-nn.ipynb` | Neural Network — PyTorch |
 
 ## Results

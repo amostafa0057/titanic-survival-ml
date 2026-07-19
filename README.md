@@ -13,10 +13,10 @@ Predicting passenger survival using both classical ML and a PyTorch neural netwo
 |-----------------------|----------|
 | Neural Network        | 82.0%    |
 | XGBoost (tuned)       | 80.9%    |
-| Pipeline KNN          | 78.7%    |
-| Logistic Regression   | 78.1%    |
-| Random Forest (tuned) | 74.7%    |
-| KNN (tuned)           | 70.0%    |
+| Pipeline KNN          | 79.8%    |
+| Logistic Regression   | 79.2%    |
+| Random Forest (tuned) | 77.5%    |
+| KNN (tuned)           | 70.8%    |
 
 **Best model: Neural Network — 82.0%**
 

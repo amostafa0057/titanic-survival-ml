@@ -1,4 +1,4 @@
-# Titanic Survival Prediction 🚢
+# Titanic Survival Prediction 
 
 Predicting passenger survival using both classical ML and a PyTorch neural network.
 

@@ -1,34 +1,31 @@
-# Titanic Survival Prediction 
+# Titanic Survival Prediction 🚢
 
-Predicting whether a passenger survived the Titanic using machine learning.
+Predicting passenger survival using both classical ML and a PyTorch neural network.
 
-## Approach
-Trained and compared 4 classifiers on the Titanic dataset after cleaning 
-and encoding. Used GridSearchCV with KFold cross-validation for tuning, 
-and built a full sklearn Pipeline for the best KNN configuration.
+## Notebooks
+| Notebook | Approach |
+|---|---|
+| `titanic-survival-ml.ipynb` | Classical ML — 4 models compared |
+| `titanic-survival-nn.ipynb` | Neural Network — PyTorch |
 
 ## Results
-| Model                 | Accuracy | F1    | Precision | Recall |
-|-----------------------|----------|-------|-----------|--------|
-| Pipeline KNN          | 80.4%    | 0.750 | 0.800     | 0.790  |
-| Logistic Regression   | 79.7%    | 0.739 | 0.854     | 0.651  |
-| XGBoost (tuned)       | 79.0%    | 0.746 | 0.800     | 0.698  |
-| Random Forest (tuned) | 77.6%    | 0.738 | 0.763     | 0.714  |
-| KNN (tuned, k=11)     | 64.3%    | 0.592 | 0.597     | 0.587  |
+| Model                 | Accuracy |
+|-----------------------|----------|
+| Neural Network        | 82.0%    |
+| XGBoost (tuned)       | 80.9%    |
+| Pipeline KNN          | 78.7%    |
+| Logistic Regression   | 78.1%    |
+| Random Forest (tuned) | 74.7%    |
+| KNN (tuned)           | 70.0%    |
 
-## Key Finding
-Fare and Age were the strongest predictors — Fare acts as a proxy for 
-wealth and class, while Age captures the "children first" evacuation pattern.
-Despite being more complex, ensemble models didn't outperform Logistic 
-Regression — simpler models can win on small, clean, linear datasets.
+**Best model: Neural Network — 82.0%**
+
+## Key Findings
+- Neural Network outperformed all classical ML models
+- XGBoost is the best classical model — complex models benefit from more data
+- Feature engineering (Deck, TicketCount) improved results over raw features
+- Fare and Age were the strongest predictors per XGBoost feature importance
 
 ## Stack
-Python · pandas · scikit-learn · XGBoost · matplotlib
-
-## Skills Demonstrated
-- Data cleaning & feature engineering
-- Supervised learning (classification)
-- Hyperparameter tuning (GridSearchCV + KFold)
-- Ensemble methods (Random Forest, XGBoost)
-- sklearn Pipelines
-- Model evaluation (accuracy, F1, precision, recall, confusion matrix)
+**ML:** pandas · scikit-learn · XGBoost · matplotlib  
+**NN:** PyTorch · scikit-learn · matplotlib
